@@ -149,7 +149,7 @@
 
                 <!--INÍCIO DO CARROSSEL DE IMAGENS E CLASS DO CSS-->
 <section class="carrossel"> 
-  <h1 class="carrossel__titulo">CONSTRUÇÕES E APRENDIZAGENS</h1> 
+  <h1 class="carrossel__titulo">CONSTRUÇÕES E APRENDIZAGENS <button id="btn-fullscreen">Abrir Tela Cheia</button></h1> 
   <!-- Adicionamos o id "carrossel-fullscreen" aqui -->
   <div class="carrossel__container" id="carrossel-fullscreen"> 
     <div class="swiper"> 
@@ -265,6 +265,23 @@ document.addEventListener('fullscreenchange', () => {
   if (typeof meuSwiper !== 'undefined') {
     setTimeout(() => meuSwiper.update(), 300); 
   }
+});
+</script>
+
+<script>
+    const botaoFullscreen = document.getElementById('btn-fullscreen');
+const carrosselSecao = document.querySelector('.carrossel');
+
+botaoFullscreen.addEventListener('click', () => {
+    if (!document.fullscreenElement) {
+        // Solicita a abertura da seção em tela cheia
+        carrosselSecao.requestFullscreen().catch(err => {
+            console.error(`Erro ao tentar abrir tela cheia: ${err.message}`);
+        });
+    } else {
+        // Sai da tela cheia
+        document.exitFullscreen();
+    }
 });
 </script>
 
