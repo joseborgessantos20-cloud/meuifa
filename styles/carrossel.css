@@ -150,6 +150,21 @@
   object-fit: contain; /* Garante que a imagem não distorça na tela cheia */
 }
 
+    #btn-fullscreen {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 10px 20px;
+  border-radius: 50%; /* Faz um botão perfeitamente redondo se for quadrado */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#btn-fullscreen:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
     .card {
         width: 60%;
         margin-left: 3em;
