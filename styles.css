@@ -59,7 +59,7 @@ body, html {
   font-size: 4vw;
   text-align: center;
   color: #440505;
-  background: linear-gradient(97.54deg, black 20%, yellow 15%, blue 20%, #110003 25%, darkred 30%, rgb(2, 66, 15) 35%);
+  background: linear-gradient(98.54deg, blue 25%, yellow 37%, lightgray 38%, green 65%, darkred 5%);
   background-size: 400%; /* Aumenta o tamanho do fundo para animar */
   -webkit-background-clip: text; /* Recorta o fundo no formato do texto */
   background-clip: text;
